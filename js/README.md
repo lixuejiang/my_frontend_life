@@ -17,15 +17,15 @@ JavaScript是EMCAScript标准的一种实现，是一种解释性的动态语言
 首先，在JavaScript里，一切皆对象。typeof运算符能识别以下6种数据类型：
 
 - 值类型：
-    + number
-    + string
-    + bool
-    + null
-    + undefined
+    + `typeof 1`:number
+    + `typeof ''`:string
+    + `typeof true`:boolean
+    + `typeof function f(){}`:function
+    + `typeof undefined`:undefined
 - 引用类型
     + object
 
-其他的Array，function，正则表达式都是object类型
+其他的Array，null，正则表达式都是object类型
 
 #### null
 - 变量定义未初始化则为null
