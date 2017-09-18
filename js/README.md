@@ -6,6 +6,7 @@
 - 解释执行，脚本语言
 - 宿主环境一般是浏览器，现在也可以运行在服务器端（node），得益于js引擎的发展
 - 特有的原型链
+- JavaScript 中的变量是没有类型的，只有值才有
 
 ## 基本语法
 
@@ -27,11 +28,22 @@ JavaScript是EMCAScript标准的一种实现，是一种解释性的动态语言
 
 其他的Array，null，正则表达式都是object类型
 
+但是，ECMAScript标准定义了7种数据类型（ES56种，ES6新增了Symble类型）：
+- null
+- undefined
+- number
+- string
+- boolean
+- object
+- symbol
+
 #### null
+
 - 变量定义未初始化则为null
 - `null === null // true`
 - `null === false // true`
 - `Object.toString.call(null) === '[Object Null]'`
+- `typeof null === 'object'`这是JavaScript实现的一个bug
 
 #### undefined
 - 变量不存在则为undefined
